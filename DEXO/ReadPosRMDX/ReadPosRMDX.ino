@@ -131,12 +131,12 @@ void loop () {
   current_pos1 = motor.getPosition(motorID1);
   Serial.print((current_pos1/100));
   Serial.print(',');
-  delay(10);
+  delay(2);
 
   current_pos2 = motor.getPosition(motorID2);
   Serial.print((current_pos2/100));
   Serial.print(',');
-  delay(10);
+  delay(2);
  
   current_pos3 = motor.getPosition(motorID3);
   Serial.print((current_pos3/100));

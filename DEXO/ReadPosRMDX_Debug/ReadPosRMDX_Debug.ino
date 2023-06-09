@@ -4,12 +4,12 @@
 #include <ACAN2515.h>
 #include "RMDX.h"
 
-#define OFFSET 
+// #define OFFSET 
 
-#define motorID1 1
-#define motorID1 2
-#define motorID1 3
-#define motorID1 4
+// #define motorID1 1
+// #define motorID2 2
+#define motorID3 3
+#define motorID4 4
 
 // Configure CAN bus adapter.
 static const byte MCP2515_CS  = 5;  // CS input of MCP2515 (adapt to your design)
@@ -50,16 +50,16 @@ void setup () {
 
     #ifdef OFFSET
       #ifdef motorID1
-        set_offset(motorID1);
+      set_offset(motorID1);
       #endif
       #ifdef motorID2
-        set_offset(motorID2);
+      set_offset(motorID2);
       #endif
       #ifdef motorID3
-        set_offset(motorID3);
+      set_offset(motorID3);
       #endif
       #ifdef motorID4
-        set_offset(motorID4);
+      set_offset(motorID4);
       #endif
       Serial.println("RESET THE MOTORS!");
       for (int i=0; i<5; i++){
